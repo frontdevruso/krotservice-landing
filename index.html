@@ -13,6 +13,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="description" content="">
         
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+        
         <title>Krot</title>
     </head>
     <body class="">
@@ -108,10 +110,7 @@
               </span>
             </button>
       
-            <button class="mobile-call" data-graph-animation="fadeInUp" data-graph-path="call-specialist" data-graph-speed="500">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.996s-.03-.805.48-1.846C.84.413 2.244.007 2.244.007s.6-.153 1.805 1.011c.48.444.784 1.044.86 1.693.043.592-1.22 1.854-1.22 1.854.099.725.401 1.407.873 1.965a31.1 31.1 0 001.799 1.898c.384.36.812.83 1.383 1.209 1.121.743 1.39.676 1.39.676s1.598-1.339 2.076-1.292c.364.036.879.276 1.537.837.489.416.802.73 1.047 1.15.088.146.156.3.205.463 0 0 .064.664-.967 1.721-1.027 1.05-2.442.775-2.442.775s-.814-.12-2.145-.747a14.668 14.668 0 01-3.974-2.843C3.39 9.262 1.977 7.557 1.289 6.37.423 4.878 0 2.996 0 2.996z" fill="#fff"/>
-              </svg>
-            </button>
+            <button class="mobile-call" data-graph-animation="fadeInUp" data-graph-path="call-specialist" data-graph-speed="500"></button>
             
             <button class="btn-reset burger header__burger" aria-label="Бургер меню">
               <span></span>
@@ -427,7 +426,7 @@
                       </div>
                   </div>
               </div>
-              <div class="swiper-pagination g-pagination g-pagination--dark main-services-slider__pagination"></div> 
+              <div class="swiper-pagination g-pagination g-pagination--dark prices-slider__pagination"></div> 
           </div>
       </section>
       
@@ -1155,8 +1154,16 @@
               <h2 class="g-title about-section__title">О Компании “Кротсервис”</h2>
               <h3 class="about-section__subtitle">Клиенты — наше ВСЕ! </h3>
               <p class="about-section__desc">Мы очень ценим и дорожим нашими клиентами: 63% получаемых заказов — либо обращения по рекомендации, либо повторные обращения и это — отличный показатель! Мы постоянно получаем положительные отзывы о работе наших специалистов.</p>
-              <div class="about-section__video">
-                  <img src="./assets/images/svg/preview-yt.svg" alt="preview">
+              <div class="video video--enabled about-section__video">
+                  <a class="video__link">
+                      <picture>
+                          <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp">
+                          <img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                      </picture>
+                  </a>
+                  <button class="btn-reset video__button" aria-label="Запустить видео">
+                    <div class="svg-icon play"></div>
+                  </button>
               </div>
           </div>
           <div class="container__1200px benefits__wrapper">
@@ -1228,7 +1235,7 @@
           </div>
       </section>
       
-      <div class="reviews" id="reviews">
+      <section class="reviews" id="reviews">
           <div class="reviews__container container__1200px">
               <div class="g-title reviews__title">Отзывы наших клиентов</div>
               <div class="g-slider">
@@ -1251,7 +1258,17 @@
                                   <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
                                   <span class="name">Сергей Петров</span>
                               </div>
-                              <img src="./assets/images/svg/preview-yt.svg" alt="preview">
+                              <div class="video video--enabled reviews-slider__item-video">
+                                  <a class="video__link">
+                                      <picture>
+                                          <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp">
+                                          <img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                                      </picture>
+                                  </a>
+                                  <button class="btn-reset video__button" aria-label="Запустить видео">
+                                    <div class="svg-icon play"></div>
+                                  </button>
+                              </div>
                           </div>
                           <div class="swiper-slide reviews-slider__item">
                               <div class="reviews-slider__item-info">
@@ -1260,7 +1277,17 @@
                                   <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
                                   <span class="name">Сергей Петров</span>
                               </div>
-                              <img src="./assets/images/svg/preview-yt.svg" alt="preview">
+                              <div class="video video--enabled reviews-slider__item-video">
+                                  <a class="video__link">
+                                      <picture>
+                                          <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp">
+                                          <img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                                      </picture>
+                                  </a>
+                                  <button class="btn-reset video__button" aria-label="Запустить видео">
+                                    <div class="svg-icon play"></div>
+                                  </button>
+                              </div>
                           </div>
                           <div class="swiper-slide reviews-slider__item">
                               <div class="reviews-slider__item-info">
@@ -1269,15 +1296,25 @@
                                   <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
                                   <span class="name">Сергей Петров</span>
                               </div>
-                              <img src="./assets/images/svg/preview-yt.svg" alt="preview">   
+                              <div class="video video--enabled reviews-slider__item-video">
+                                  <a class="video__link">
+                                      <picture>
+                                          <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp">
+                                          <img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                                      </picture>
+                                  </a>
+                                  <button class="btn-reset video__button" aria-label="Запустить видео">
+                                    <div class="svg-icon play"></div>
+                                  </button>
+                              </div>  
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
+      </section>
       
-      <div class="faq" id="faq"> 
+      <section class="faq" id="faq"> 
           <div class="faq__container container__1200px">
               <h1 class="g-title faq__title">Самые часто задаваемые вопросы</h1>
               <div class="faq__wrapper">
@@ -1334,9 +1371,9 @@
                   </form>
               </div>
           </div>
-      </div>
+      </section>
       
-      <div class="location" id="location">
+      <section class="location" id="location">
           <div class="location__container container__1200px">
               <div class="location__contacts">
                   <h1 class="g-title">Контакты</h1>
@@ -1374,7 +1411,7 @@
                   </div>
               </div>
           </div>
-      </div>
+      </section>
 
       <footer class="footer">
           <div class="footer__container container__1200px">
