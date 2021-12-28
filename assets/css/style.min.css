@@ -4084,24 +4084,13 @@ html .menu-lock .header {
 }
 
 .about-section__video {
-    max-width: 800px;
-    height: 450px;
     margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     border: 10px solid rgba(64,150,252,.2);
     box-shadow: 0 64px 134px rgba(0,0,0,.1);
     border-radius: 5px
-}
-
-@media (max-width:650px) {
-    .about-section__video {
-        height: 300px
-    }
-}
-
-@media (max-width:450px) {
-    .about-section__video {
-        height: 200px
-    }
 }
 
 .benefits__wrapper {
@@ -4727,41 +4716,8 @@ html .menu-lock .header {
 
 .reviews-slider__item-video {
     margin-left: auto;
-    border-radius: .5em;
-    width: 800px;
-    height: 460px
-}
-
-.reviews-slider__item-video iframe,.reviews-slider__item-video img {
-    border-radius: .5em
-}
-
-@media (max-width:1200px) {
-    .reviews-slider__item-video {
-        margin-right: auto;
-        padding: 0 3.25em;
-        width: 100%;
-        height: 45vw;
-        border-radius: .2em
-    }
-}
-
-@media (max-width:576px) {
-    .reviews-slider__item-video {
-        border-radius: .2em;
-        padding: 0 1em;
-        margin: 0;
-        width: 100%
-    }
-}
-
-@media (max-width:450px) {
-    .reviews-slider__item-video {
-        border-radius: .2em;
-        padding: 0;
-        width: 100%;
-        height: 55vw
-    }
+    margin-right: 0!important;
+    width: 800px
 }
 
 @media (max-width:1200px) {
@@ -5715,38 +5671,128 @@ html .menu-lock .header {
     display: none
 }
 
-.video {
+.plyr {
     position: relative;
-    overflow: hidden
+    max-width: 780px;
+    height: 450px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 64px 134px rgba(0,0,0,.1)
 }
 
-.video iframe,.video img {
-    width: 100%;
-    height: 100%
+@media (max-width:1200px) {
+    .plyr {
+        margin: 0 auto
+    }
 }
 
-.video .video__button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+@media (max-width:768px) {
+    .plyr {
+        height: 350px
+    }
+}
+
+@media (max-width:576px) {
+    .plyr {
+        height: 290px
+    }
+}
+
+@media (max-width:420px) {
+    .plyr {
+        height: 200px
+    }
+}
+
+.plyr:hover .plyr__controls {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.plyr .plyr__controls {
+    display: none
+}
+
+.plyr__poster {
+    background-size: cover
+}
+
+.plyr__control--overlaid {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #eb2f2f;
+    width: 100px!important;
+    height: 100px;
     padding: 0;
-    z-index: 10
+    opacity: 1
 }
 
-.video .video__button .svg-icon {
-    width: 5em;
-    height: 5em;
-    background: url(../images/svg/play.svg) 50% no-repeat #eb2f2f;
-    background-size: 20%;
-    border-radius: 100%
+@media (max-width:768px) {
+    .plyr__control--overlaid {
+        width: 80px!important;
+        height: 80px
+    }
+
+    .plyr__control--overlaid svg {
+        width: 30px;
+        height: 30px
+    }
 }
 
-@media (max-width:650px) {
-    .video .video__button .svg-icon {
-        width: 3em;
-        height: 3em
+@media (max-width:576px) {
+    .plyr__control--overlaid {
+        width: 60px!important;
+        height: 60px
+    }
+
+    .plyr__control--overlaid svg {
+        width: 20px;
+        height: 20px
+    }
+}
+
+.plyr__control--overlaid:hover {
+    background-color: #e30303!important
+}
+
+.plyr__control--overlaid svg {
+    width: 33px;
+    height: 33px
+}
+
+.plyr video,video {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 780px;
+    height: 430px;
+    margin: 0 auto
+}
+
+@media (max-width:768px) {
+    video {
+        height: 350px
+    }
+}
+
+@media (max-width:576px) {
+    video {
+        height: 290px
+    }
+}
+
+@media (max-width:420px) {
+    video {
+        height: 200px
     }
 }
 
