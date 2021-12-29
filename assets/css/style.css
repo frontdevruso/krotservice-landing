@@ -63,12 +63,18 @@ svg {
   100% {
     opacity: 1; } }
 
-html .lock {
-  overflow: hidden; }
+.lock {
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+  -webkit-appearance: none; }
 
-html .menu-lock {
-  overflow: hidden; }
-  html .menu-lock .header {
+.menu-lock {
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+  -webkit-appearance: none; }
+  .menu-lock .header {
     border: none; }
 
 .g-title {

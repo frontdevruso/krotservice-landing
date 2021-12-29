@@ -90,11 +90,14 @@ svg {
     }
 }
 
-html .lock,html .menu-lock {
-    overflow: hidden
+.lock,.menu-lock {
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-appearance: none
 }
 
-html .menu-lock .header {
+.menu-lock .header {
     border: none
 }
 
@@ -3028,38 +3031,38 @@ html .menu-lock .header {
 }
 
 .main-service:nth-child(4) .main-service__icon {
-    margin-bottom: 92px;
+    margin-bottom: 92px
 }
 
 .main-service:nth-child(4) .main-service__icon:before {
     bottom: -101px;
-    left: -107px;
+    left: -107px
 }
 
 .main-service:nth-child(4) .main-service__icon:after {
     right: -107px;
-    bottom: -101px;
+    bottom: -101px
 }
 
 .main-service-1 {
     width: 50px;
-    height: 175px;
+    height: 175px
 }
 
 .main-service-2 {
     width: 50px;
-    height: 227px;
+    height: 227px
 }
 
 .main-service-3 {
     width: 50px;
-    height: 135px;
+    height: 135px
 }
 
 @-webkit-keyframes b {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateY(0)
     }
 
     50% {
@@ -3069,73 +3072,73 @@ html .menu-lock .header {
 
     to {
         -webkit-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
 @keyframes b {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateY(0)
     }
 
     50% {
         -webkit-transform: translateY(5px);
-        transform: translateY(5px);
+        transform: translateY(5px)
     }
 
     to {
         -webkit-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
 @-webkit-keyframes c {
     0% {
-        background-position: 1% 0;
+        background-position: 1% 0
     }
 
     25% {
-        background-position: 60% 0;
+        background-position: 60% 0
     }
 
     50% {
-        background-position: 100% 0;
+        background-position: 100% 0
     }
 
     75% {
-        background-position: 60% 0;
+        background-position: 60% 0
     }
 
     to {
-        background-position: 1% 0;
+        background-position: 1% 0
     }
 }
 
 @keyframes c {
     0% {
-        background-position: 1% 0;
+        background-position: 1% 0
     }
 
     25% {
-        background-position: 60% 0;
+        background-position: 60% 0
     }
 
     50% {
-        background-position: 100% 0;
+        background-position: 100% 0
     }
 
     75% {
-        background-position: 60% 0;
+        background-position: 60% 0
     }
 
     to {
-        background-position: 1% 0;
+        background-position: 1% 0
     }
 }
 
 .selectivity {
-    padding: 4em 0;
+    padding: 4em 0
 }
 
 .selectivity h1 {
@@ -3156,6 +3159,7 @@ html .menu-lock .header {
         font-size: 18px
     }
 }
+
 @media (max-width:500px) {
     .selectivity {
         font-size: .6em
