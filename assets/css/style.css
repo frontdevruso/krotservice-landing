@@ -98,6 +98,10 @@ html .menu-lock {
     color: #818181;
     opacity: 1; }
 
+.error {
+  background-color: rgba(235, 47, 47, 0.1);
+  border: 1px solid rgba(235, 47, 47, 0.5); }
+
 .g-textarea {
   border: 1px solid transparent;
   color: #5b5f76;
@@ -183,17 +187,12 @@ html .menu-lock {
   color: white;
   position: relative;
   text-decoration: none;
-  cursor: pointer; }
-  .policy__link::after {
-    width: 100%;
-    height: 0.05em;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    bottom: -0.25em;
-    right: 0;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.2); }
+  cursor: pointer;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  transition: .3s; }
+  .policy__link:hover {
+    color: #4096fc;
+    border-bottom: 1px solid rgba(64, 150, 252, 0.5); }
 
 .messenger-link {
   width: 2em;
@@ -702,6 +701,7 @@ html .menu-lock {
   .footer__supplementary a {
     color: #212121;
     font-weight: 400;
+    cursor: pointer;
     text-decoration: underline; }
   .footer__supplementary-ruso {
     width: 145px;
@@ -781,7 +781,8 @@ html .menu-lock {
     .footer__container--mobile .footer__policy--mb a {
       color: rgba(33, 33, 33, 0.6);
       text-decoration: underline;
-      font-size: 0.7em; }
+      font-size: 0.7em;
+      cursor: pointer; }
       .footer__container--mobile .footer__policy--mb a:not(:last-child) {
         margin-bottom: 1em; }
   .footer__container--mobile .footer__logo-wrapper {
@@ -2205,6 +2206,8 @@ html .menu-lock {
 .consultation__agreement {
   font-size: 0.6em;
   line-height: 160%; }
+  .consultation__agreement a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   @media (max-width: 1230px) {
     .consultation__agreement {
       margin-top: 1.5em; } }
@@ -3414,7 +3417,8 @@ html .menu-lock {
         padding-bottom: 3px;
         border-bottom: 1px solid rgba(33, 33, 33, 0.2);
         color: #212121;
-        transition: color 0.3s, border-bottom 0.3s; }
+        transition: color 0.3s, border-bottom 0.3s;
+        cursor: pointer; }
         .modal-form__desc a:hover {
           color: #4096fc;
           border-bottom: 1px solid rgba(64, 150, 252, 0.5); }
@@ -3451,6 +3455,7 @@ html .menu-lock {
   width: 16px;
   height: 16px;
   padding: 0;
+  cursor: pointer;
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 3.46146e-07L16 1.77778L1.77778 16L0 14.2222L14.2222 3.46146e-07Z' fill='%23D8D8D8'/%3E%3Cpath d='M16 14.2222L14.2222 16L0 1.77778L1.77778 0L16 14.2222Z' fill='%23D8D8D8'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -3498,7 +3503,10 @@ html .menu-lock {
   margin: 0 0 0 auto;
   cursor: pointer;
   background-color: #fff;
-  box-shadow: 0 64px 134px rgba(0, 0, 0, 0.1); }
+  border-radius: 0.5em; }
+  .plyr:first-child {
+    box-shadow: 0 64px 134px rgba(0, 0, 0, 0.1);
+    border-radius: 0; }
   @media (max-width: 1200px) {
     .plyr {
       margin: 0 auto; } }
@@ -3566,14 +3574,13 @@ video {
       height: 200px; } }
 
 .thanks-body-wrapper {
-  height: 100vh; }
+  min-height: 100vh;
+  background-color: #242843; }
 
 .thanks {
   background-color: #242843;
   color: white;
-  height: 100%;
-  overflow: auto;
-  padding-bottom: 2em; }
+  overflow: auto; }
   @media (max-width: 1200px) {
     .thanks {
       font-size: 18px; } }

@@ -157,6 +157,11 @@ html .menu-lock .header {
     opacity: 1
 }
 
+.error {
+    background-color: rgba(235,47,47,.1);
+    border: 1px solid rgba(235,47,47,.5)
+}
+
 .g-textarea {
     border: 1px solid transparent;
     color: #5b5f76;
@@ -269,19 +274,14 @@ html .menu-lock .header {
     color: #fff;
     position: relative;
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
+    border-bottom: 1px solid rgba(33,33,33,.2);
+    transition: .3s
 }
 
-.policy__link:after {
-    width: 100%;
-    height: .05em;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    bottom: -.25em;
-    right: 0;
-    z-index: 2;
-    background-color: hsla(0,0%,100%,.2)
+.policy__link:hover {
+    color: #4096fc;
+    border-bottom: 1px solid rgba(64,150,252,.5)
 }
 
 .messenger-link {
@@ -1058,6 +1058,7 @@ html .menu-lock .header {
 .footer__supplementary a {
     color: #212121;
     font-weight: 400;
+    cursor: pointer;
     text-decoration: underline
 }
 
@@ -1186,7 +1187,8 @@ html .menu-lock .header {
 .footer__container--mobile .footer__policy--mb a {
     color: rgba(33,33,33,.6);
     text-decoration: underline;
-    font-size: .7em
+    font-size: .7em;
+    cursor: pointer
 }
 
 .footer__container--mobile .footer__policy--mb a:not(:last-child) {
@@ -3026,38 +3028,38 @@ html .menu-lock .header {
 }
 
 .main-service:nth-child(4) .main-service__icon {
-    margin-bottom: 92px
+    margin-bottom: 92px;
 }
 
 .main-service:nth-child(4) .main-service__icon:before {
     bottom: -101px;
-    left: -107px
+    left: -107px;
 }
 
 .main-service:nth-child(4) .main-service__icon:after {
     right: -107px;
-    bottom: -101px
+    bottom: -101px;
 }
 
 .main-service-1 {
     width: 50px;
-    height: 175px
+    height: 175px;
 }
 
 .main-service-2 {
     width: 50px;
-    height: 227px
+    height: 227px;
 }
 
 .main-service-3 {
     width: 50px;
-    height: 135px
+    height: 135px;
 }
 
 @-webkit-keyframes b {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
@@ -3067,73 +3069,73 @@ html .menu-lock .header {
 
     to {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @keyframes b {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
         -webkit-transform: translateY(5px);
-        transform: translateY(5px)
+        transform: translateY(5px);
     }
 
     to {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @-webkit-keyframes c {
     0% {
-        background-position: 1% 0
+        background-position: 1% 0;
     }
 
     25% {
-        background-position: 60% 0
+        background-position: 60% 0;
     }
 
     50% {
-        background-position: 100% 0
+        background-position: 100% 0;
     }
 
     75% {
-        background-position: 60% 0
+        background-position: 60% 0;
     }
 
     to {
-        background-position: 1% 0
+        background-position: 1% 0;
     }
 }
 
 @keyframes c {
     0% {
-        background-position: 1% 0
+        background-position: 1% 0;
     }
 
     25% {
-        background-position: 60% 0
+        background-position: 60% 0;
     }
 
     50% {
-        background-position: 100% 0
+        background-position: 100% 0;
     }
 
     75% {
-        background-position: 60% 0
+        background-position: 60% 0;
     }
 
     to {
-        background-position: 1% 0
+        background-position: 1% 0;
     }
 }
 
 .selectivity {
-    padding: 4em 0
+    padding: 4em 0;
 }
 
 .selectivity h1 {
@@ -3530,6 +3532,10 @@ html .menu-lock .header {
 .consultation__agreement {
     font-size: .6em;
     line-height: 160%
+}
+
+.consultation__agreement a {
+    border-bottom: 1px solid hsla(0,0%,100%,.2)
 }
 
 @media (max-width:1230px) {
@@ -5563,7 +5569,8 @@ html .menu-lock .header {
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(33,33,33,.2);
     color: #212121;
-    transition: color .3s,border-bottom .3s
+    transition: color .3s,border-bottom .3s;
+    cursor: pointer
 }
 
 .modal-form__desc a:hover {
@@ -5610,6 +5617,7 @@ html .menu-lock .header {
     width: 16px;
     height: 16px;
     padding: 0;
+    cursor: pointer;
     background-color: transparent;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.222 0L16 1.778 1.778 16 0 14.222 14.222 0z' fill='%23D8D8D8'/%3E%3Cpath d='M16 14.222L14.222 16 0 1.778 1.778 0 16 14.222z' fill='%23D8D8D8'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -5678,7 +5686,12 @@ html .menu-lock .header {
     margin: 0 0 0 auto;
     cursor: pointer;
     background-color: #fff;
-    box-shadow: 0 64px 134px rgba(0,0,0,.1)
+    border-radius: .5em
+}
+
+.plyr:first-child {
+    box-shadow: 0 64px 134px rgba(0,0,0,.1);
+    border-radius: 0
 }
 
 @media (max-width:1200px) {
@@ -5797,15 +5810,14 @@ video {
 }
 
 .thanks-body-wrapper {
-    height: 100vh
+    min-height: 100vh;
+    background-color: #242843
 }
 
 .thanks {
     background-color: #242843;
     color: #fff;
-    height: 100%;
-    overflow: auto;
-    padding-bottom: 2em
+    overflow: auto
 }
 
 @media (max-width:1200px) {
