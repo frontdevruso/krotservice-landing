@@ -846,8 +846,10 @@ svg {
     position: absolute;
     top: 0;
     left: 438px;
+    z-index: 5;
     width: 1150px;
-    height: 569px; }
+    height: 569px;
+    padding-bottom: 90px; }
     @media (max-width: 1230px) {
       .demonstration .pipe {
         display: none; } }
@@ -945,8 +947,12 @@ svg {
       padding: 2em 0 2.5em; } }
   @media (max-width: 940px) {
     .demonstration__info {
+      font-size: 20px;
       padding: 2em 15px 3em;
       width: 100%; } }
+  @media (max-width: 768px) {
+    .demonstration__info {
+      font-size: 18px; } }
   @media (max-width: 500px) {
     .demonstration__info {
       font-size: 0.6em; } }
@@ -960,18 +966,25 @@ svg {
   .demonstration__table-item {
     display: flex;
     flex-direction: column;
-    width: 7em;
-    padding: 2.75em 0.8em;
+    width: 8.5em;
     text-align: center; }
     .demonstration__table-item:first-child, .demonstration__table-item:last-child {
       border-right: 0.05em solid rgba(255, 255, 255, 0.1);
       border-left: 0.05em solid rgba(255, 255, 255, 0.1); }
-    .demonstration__table-item-top {
+    .demonstration__table-item-top, .demonstration__table-item-bottom {
       height: 50%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      z-index: 10; }
+      margin: auto 0;
+      padding: 0 0.8em;
+      transition: .3s; }
+      @media (min-width: 940px) {
+        .demonstration__table-item-top:hover, .demonstration__table-item-bottom:hover {
+          background-color: #2D314A; } }
+    .demonstration__table-item-top {
+      padding-bottom: 2em; }
       @media (max-width: 1230px) {
         .demonstration__table-item-top {
           border-bottom: 0.05em solid rgba(255, 255, 255, 0.1);
@@ -980,8 +993,7 @@ svg {
         .demonstration__table-item-top {
           padding-top: 1em; } }
     .demonstration__table-item-bottom {
-      margin-top: auto;
-      z-index: 10; }
+      padding-top: 2em; }
       @media (max-width: 1230px) {
         .demonstration__table-item-bottom {
           padding: 0 0.8em; } }
@@ -994,7 +1006,8 @@ svg {
       width: auto;
       height: 2em; }
     .demonstration__table-item .order-btn {
-      padding: 0.6em 2em; }
+      padding: 0.6em 2em;
+      z-index: 10; }
       .demonstration__table-item .order-btn span {
         font-size: 0.5em; }
       @media (max-width: 940px) {
@@ -1004,7 +1017,7 @@ svg {
       padding: 0.8em 0 1.05em;
       font-size: 0.6em;
       font-weight: 700;
-      line-height: 1.3em;
+      line-height: 140%;
       text-transform: uppercase; }
       @media (max-width: 400px) {
         .demonstration__table-item p {
@@ -1013,7 +1026,7 @@ svg {
       .demonstration__table-item {
         font-size: 24px;
         width: 9em;
-        padding: 2.75em 0em; } }
+        padding: 0; } }
     @media (max-width: 1080px) {
       .demonstration__table-item {
         font-size: 21px; } }
@@ -1999,11 +2012,19 @@ svg {
     max-width: 10em;
     font-size: 2em;
     line-height: 110%; }
+    @media (max-width: 768px) {
+      .selectivity h1 {
+        text-align: center;
+        margin: 0 auto; } }
   .selectivity__paragraph {
     max-width: 28.8em;
     font-size: 0.9em;
     padding: 0.81em 0 2.22em;
     line-height: 160%; }
+    @media (max-width: 768px) {
+      .selectivity__paragraph {
+        text-align: center;
+        margin: 0 auto; } }
   @media (max-width: 1200px) {
     .selectivity {
       font-size: 18px; } }
@@ -2445,7 +2466,7 @@ svg {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #bebebe;
     transition: background-color 0.3s;
     cursor: pointer; }
     @media (max-width: 360px) {
@@ -2466,10 +2487,8 @@ svg {
   .g-pagination--dark {
     background-color: transparent;
     bottom: 0 !important; }
-    .g-pagination--dark .swiper-pagination-bullet {
-      background-color: rgba(64, 150, 252, 0.2); }
-      .g-pagination--dark .swiper-pagination-bullet-active {
-        background-color: #4096FC; }
+    .g-pagination--dark .swiper-pagination-bullet-active {
+      background-color: #4096FC; }
 
 .about-section {
   position: relative;
@@ -2769,6 +2788,7 @@ svg {
 .certificates__title {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-bottom: 34px; }
   @media (max-width: 768px) {
     .certificates__title {
