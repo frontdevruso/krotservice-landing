@@ -2901,6 +2901,12 @@ svg {
     }
 }
 
+@media (max-width:500px) {
+    .main-service__heading {
+        font-size: 20px
+    }
+}
+
 .main-service__desc {
     font-size: 14px;
     font-weight: 500;
@@ -3508,7 +3514,8 @@ svg {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    border: 1px solid #4096fc
 }
 
 @media (max-width:575px) {

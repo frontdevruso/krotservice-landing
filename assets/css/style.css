@@ -1844,6 +1844,9 @@ svg {
     @media (max-width: 620px) {
       .main-service__heading {
         margin: 60px 0 20px; } }
+    @media (max-width: 500px) {
+      .main-service__heading {
+        font-size: 20px; } }
   .main-service__desc {
     font-size: 14px;
     font-weight: 500;
@@ -2196,7 +2199,8 @@ svg {
     font-size: 0.7em;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    border: 1px solid #4096fc; }
     @media (max-width: 575px) {
       .consultation__input .consultation__btn {
         margin-top: 1em; } }
