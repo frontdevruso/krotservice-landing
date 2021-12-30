@@ -1823,8 +1823,15 @@ svg {
     left: 0;
     width: 10px;
     height: 50px;
+    background: -webkit-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -moz-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -o-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    -webkit-clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
+    -webkit-background-size: 50000% 50000%;
+    -moz-background-size: 50000%;
+    -o-background-size: 50000%;
     background-size: 50000%; }
     .main-service__line--1 {
       bottom: 25px;
@@ -1930,8 +1937,16 @@ svg {
     left: 50%;
     width: 60px;
     height: 60px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+    background: -webkit-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -moz-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -o-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background-size: 15000%; }
     @media (max-width: 1024px) {
@@ -3044,7 +3059,7 @@ svg {
     border-radius: 1000px;
     font-size: 14px;
     font-weight: 500;
-    padding-left: 30px;
+    padding: 0 0 0 30px;
     margin-bottom: 15px;
     color: #212121; }
     .faq__form input::placeholder {

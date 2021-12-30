@@ -4937,7 +4937,7 @@ svg {
     border-radius: 1000px;
     font-size: 14px;
     font-weight: 500;
-    padding-left: 30px;
+    padding: 0 0 0 30px;
     margin-bottom: 15px;
     color: #212121
 }
