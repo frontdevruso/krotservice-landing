@@ -913,14 +913,23 @@ svg {
 .footer__wrapper .footer__messengers {
     display: -ms-flexbox;
     display: flex;
-    margin-top: 13px
+    margin-top: 13px;
+    margin-right: 15px
+}
+
+.footer__wrapper .footer__messengers a {
+    background-color: #f6f6f6;
+    transition: background-color .3s
+}
+
+.footer__wrapper .footer__messengers a:hover {
+    background-color: #eaeaea
 }
 
 @media (max-width:1024px) {
     .footer__wrapper .footer__messengers {
         -ms-flex-align: center;
-        align-items: center;
-        margin: 0 30px 0 0
+        align-items: center
     }
 }
 
@@ -956,7 +965,12 @@ svg {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
-    color: #212121
+    color: #212121;
+    transition: .3s
+}
+
+.footer__wrapper .footer__links a:hover {
+    color: #6d6d6d
 }
 
 @media (max-width:1230px) {
@@ -1020,7 +1034,12 @@ svg {
     width: fit-content;
     padding: 0;
     margin-left: auto;
-    cursor: pointer
+    cursor: pointer;
+    transition: .3s
+}
+
+.footer__wrapper .footer__contacts button:hover {
+    color: #7cb8ff
 }
 
 @media (max-width:1024px) {
@@ -5399,12 +5418,43 @@ svg {
     }
 }
 
+.location__container {
+    position: relative
+}
+
 @media (max-width:768px) {
     .location__container {
+        position: static;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
         justify-content: center
+    }
+}
+
+.map__cursor {
+    position: absolute;
+    top: 35%;
+    right: 32%;
+    z-index: 5
+}
+
+@media (max-width:992px) {
+    .map__cursor {
+        right: 28%
+    }
+}
+
+@media (max-width:768px) {
+    .map__cursor {
+        top: 32%;
+        right: 42%
+    }
+}
+
+@media (max-width:420px) {
+    .map__cursor {
+        top: 20%
     }
 }
 
@@ -5418,6 +5468,8 @@ svg {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+    z-index: 10;
     background-color: #fff;
     box-shadow: 0 3.2em 6.7em rgba(0,0,0,.1)
 }
@@ -5485,11 +5537,16 @@ svg {
     justify-content: center;
     border: .1em solid #ebebeb;
     border-radius: .25em;
-    background-color: #f6f6f6
+    background-color: #f6f6f6;
+    transition: background-color .3s
 }
 
 .location__contacts-info-icons a:not(:last-child) {
     margin-right: .5em
+}
+
+.location__contacts-info-icons a:hover {
+    background-color: #ebebeb
 }
 
 .location__contacts-info-btn {
