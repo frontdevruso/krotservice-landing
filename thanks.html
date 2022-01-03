@@ -150,10 +150,10 @@
                   <div class="modal-content">
                     <h2 class="g-title modal__title">Вызвать специалиста</h2>
                     <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
-                    <form class="modal-form validate-form4" action="#">
+                    <form class="modal-form validate-form4" action="">
                       <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя" inputmode="text">
-                      <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон" inputmode="text">
-                      <button class="btn-reset g-btn modal-form__btn">Вызвать</button>
+                      <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" minlength="13" placeholder="Ваш телефон" inputmode="text">
+                      <button class="btn-reset g-btn modal-form__btn" type="submit">Вызвать</button>
                     </form>
                     <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a data-graph-animation="fadeInUp" data-graph-path="policy-info" data-graph-speed="500">персональных данных</a></p>
                   </div>
@@ -198,7 +198,7 @@
                   <div class="modal-content">
                     <h2 class="g-title modal__title">Заказать услугу</h2>
                     <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
-                    <form class="modal-form validate-form5" action="#">
+                    <form class="modal-form validate-form9" action="#">
                       <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
                       <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
                       <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
