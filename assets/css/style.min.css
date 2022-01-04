@@ -1219,13 +1219,9 @@ svg {
     justify-content: center
 }
 
-.footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
-    background-color: #F6F6F6;
-    margin-right: 0.5em;
-}
-
-.footer__container--mobile .footer__contacts--mb .footer__messengers--mb a:focus {
-    background-color: #eaeaea;
+.footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
+    margin-right: .5em;
+    background-color: #eaeaea
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
@@ -1363,8 +1359,8 @@ svg {
         position: absolute;
         left: -15px;
         top: -4em;
-        width: 83vw;
-        height: 114%
+        width: 90vw;
+        height: 110%
     }
 }
 
@@ -1444,7 +1440,7 @@ svg {
 
 @media (max-width:400px) {
     .demonstration__info h1 {
-        margin-right: 10%
+        margin-right: 15%
     }
 }
 
@@ -1480,7 +1476,14 @@ svg {
 @media (max-width:940px) {
     .demonstration__info .d-btn {
         margin-top: 10em;
+        width: 87%;
         text-align: center
+    }
+}
+
+@media (max-width:650px) {
+    .demonstration__info .d-btn {
+        width: 100%
     }
 }
 
@@ -2827,6 +2830,18 @@ svg {
     .main-services__list {
         display: -ms-flexbox;
         display: flex
+    }
+}
+
+@media (max-width:1024px) {
+    .main-services-slider {
+        margin-left: 10px
+    }
+}
+
+@media (max-width:768px) {
+    .main-services-slider {
+        margin-left: auto
     }
 }
 

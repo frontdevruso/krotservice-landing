@@ -802,8 +802,9 @@ svg {
       display: flex;
       align-items: center;
       justify-content: center; }
-      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
-        background-color: #F6F6F6; }
+      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
+        margin-right: 0.5em;
+        background-color: #eaeaea; }
       .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
         color: #212121;
         text-decoration: none;
@@ -889,8 +890,8 @@ svg {
           position: absolute;
           left: -15px;
           top: -4em;
-          width: 83vw;
-          height: 114%; } }
+          width: 90vw;
+          height: 110%; } }
       @media (max-width: 768px) {
         .demonstration .pipe--mb {
           display: flex;
@@ -942,7 +943,7 @@ svg {
     z-index: 5; }
     @media (max-width: 400px) {
       .demonstration__info h1 {
-        margin-right: 10%; } }
+        margin-right: 15%; } }
   .demonstration__info p {
     font-size: 0.9em;
     font-weight: 500;
@@ -965,7 +966,11 @@ svg {
     @media (max-width: 940px) {
       .demonstration__info .d-btn {
         margin-top: 10em;
+        width: 87%;
         text-align: center; } }
+    @media (max-width: 650px) {
+      .demonstration__info .d-btn {
+        width: 100%; } }
   @media (max-width: 1230px) {
     .demonstration__info {
       font-size: 18px; } }
@@ -1787,6 +1792,12 @@ svg {
     @media (max-width: 1024px) {
       .main-services__list {
         display: flex; } }
+  @media (max-width: 1024px) {
+    .main-services-slider {
+      margin-left: 10px; } }
+  @media (max-width: 768px) {
+    .main-services-slider {
+      margin-left: auto; } }
   .main-services-slider__pagination {
     display: none; }
   .main-services-slider.swiper-initialized .swiper-pagination {
