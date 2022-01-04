@@ -1220,7 +1220,12 @@ svg {
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
-    background-color: #f6f6f6
+    background-color: #F6F6F6;
+    margin-right: 0.5em;
+}
+
+.footer__container--mobile .footer__contacts--mb .footer__messengers--mb a:focus {
+    background-color: #eaeaea;
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
