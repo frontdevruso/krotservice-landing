@@ -1092,8 +1092,7 @@ svg {
 }
 
 .footer__supplementary-ruso:hover svg {
-    -webkit-filter: drop-shadow(0 3px 12px black);
-    filter: drop-shadow(0 3px 12px black)
+    fill: #212121
 }
 
 @media (max-width:768px) {
@@ -1359,8 +1358,8 @@ svg {
         position: absolute;
         left: -15px;
         top: -4em;
-        width: 90vw;
-        height: 110%
+        width: 83vw;
+        height: 114%
     }
 }
 
