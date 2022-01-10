@@ -4470,6 +4470,7 @@ svg {
 
 .clients__image {
     display: block;
+    height: auto;
     -o-object-fit: cover;
     object-fit: cover
 }
