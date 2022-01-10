@@ -1220,8 +1220,11 @@ svg {
     justify-content: center
 }
 
-.footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
-    background-color: #f6f6f6
+.footer__messengers--mb .messenger-link {
+    background-color: #e5e2e2;
+}
+.footer__messengers--mb .messenger-link:not(:last-child) {
+    margin-right: 0.5em;
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
