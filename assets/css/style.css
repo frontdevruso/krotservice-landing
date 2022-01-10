@@ -726,7 +726,7 @@ svg {
     height: 16px;
     transition: .3s; }
   .footer__supplementary-ruso:hover svg {
-    fill: #212121; }
+    filter: drop-shadow(0px 3px 12px black); }
   @media (max-width: 768px) {
     .footer__supplementary {
       display: grid;
@@ -802,9 +802,8 @@ svg {
       display: flex;
       align-items: center;
       justify-content: center; }
-      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
-        margin-right: 0.5em;
-        background-color: #eaeaea; }
+      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
+        background-color: #F6F6F6; }
       .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
         color: #212121;
         text-decoration: none;
@@ -943,7 +942,7 @@ svg {
     z-index: 5; }
     @media (max-width: 400px) {
       .demonstration__info h1 {
-        margin-right: 15%; } }
+        margin-right: 10%; } }
   .demonstration__info p {
     font-size: 0.9em;
     font-weight: 500;
@@ -966,11 +965,7 @@ svg {
     @media (max-width: 940px) {
       .demonstration__info .d-btn {
         margin-top: 10em;
-        width: 87%;
         text-align: center; } }
-    @media (max-width: 650px) {
-      .demonstration__info .d-btn {
-        width: 100%; } }
   @media (max-width: 1230px) {
     .demonstration__info {
       font-size: 18px; } }
@@ -1792,12 +1787,6 @@ svg {
     @media (max-width: 1024px) {
       .main-services__list {
         display: flex; } }
-  @media (max-width: 1024px) {
-    .main-services-slider {
-      margin-left: 10px; } }
-  @media (max-width: 768px) {
-    .main-services-slider {
-      margin-left: auto; } }
   .main-services-slider__pagination {
     display: none; }
   .main-services-slider.swiper-initialized .swiper-pagination {
@@ -2765,10 +2754,12 @@ svg {
   display: block;
   object-fit: cover; }
   .clients__image--1 {
-    width: 98px; }
+    width: 98px;
+    height: 85px; }
     @media (max-width: 576px) {
       .clients__image--1 {
-        width: 70px; } }
+        width: 70px;
+        height: 60px; } }
   .clients__image--2 {
     width: 148px; }
     @media (max-width: 576px) {
@@ -2805,10 +2796,12 @@ svg {
       .clients__image--8 {
         width: 110px; } }
   .clients__image--9 {
-    width: 116px; }
+    width: 116px;
+    height: 116px; }
     @media (max-width: 576px) {
       .clients__image--9 {
-        width: 80px; } }
+        width: 80px;
+        height: 80px; } }
 
 .certificates__container {
   padding-top: 80px;

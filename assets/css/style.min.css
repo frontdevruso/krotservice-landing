@@ -1092,7 +1092,8 @@ svg {
 }
 
 .footer__supplementary-ruso:hover svg {
-    fill: #212121
+    -webkit-filter: drop-shadow(0 3px 12px black);
+    filter: drop-shadow(0 3px 12px black)
 }
 
 @media (max-width:768px) {
@@ -1219,9 +1220,8 @@ svg {
     justify-content: center
 }
 
-.footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
-    margin-right: .5em;
-    background-color: #eaeaea
+.footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
+    background-color: #f6f6f6
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
@@ -1440,7 +1440,7 @@ svg {
 
 @media (max-width:400px) {
     .demonstration__info h1 {
-        margin-right: 15%
+        margin-right: 10%
     }
 }
 
@@ -1476,14 +1476,7 @@ svg {
 @media (max-width:940px) {
     .demonstration__info .d-btn {
         margin-top: 10em;
-        width: 87%;
         text-align: center
-    }
-}
-
-@media (max-width:650px) {
-    .demonstration__info .d-btn {
-        width: 100%
     }
 }
 
@@ -2830,18 +2823,6 @@ svg {
     .main-services__list {
         display: -ms-flexbox;
         display: flex
-    }
-}
-
-@media (max-width:1024px) {
-    .main-services-slider {
-        margin-left: 10px
-    }
-}
-
-@media (max-width:768px) {
-    .main-services-slider {
-        margin-left: auto
     }
 }
 
@@ -4470,7 +4451,6 @@ svg {
 
 .clients__image {
     display: block;
-    height: auto;
     -o-object-fit: cover;
     object-fit: cover
 }
@@ -4559,13 +4539,13 @@ svg {
 
 .clients__image--9 {
     width: 116px;
-    height: 116px;
+    height: 116px
 }
 
 @media (max-width:576px) {
     .clients__image--9 {
         width: 80px;
-        height: 80px;
+        height: 80px
     }
 }
 
