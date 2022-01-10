@@ -4476,12 +4476,14 @@ svg {
 }
 
 .clients__image--1 {
-    width: 98px
+    width: 98px;
+    height: 85px
 }
 
 @media (max-width:576px) {
     .clients__image--1 {
-        width: 70px
+        width: 70px;
+        height: 60px
     }
 }
 
@@ -4556,12 +4558,14 @@ svg {
 }
 
 .clients__image--9 {
-    width: 116px
+    width: 116px;
+    height: 116px;
 }
 
 @media (max-width:576px) {
     .clients__image--9 {
-        width: 80px
+        width: 80px;
+        height: 80px;
     }
 }
 
