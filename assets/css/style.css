@@ -79,7 +79,10 @@ svg {
   -webkit-appearance: none;
   height: 100vh; }
   .menu-lock .header {
-    border: none; }
+    border: none;
+    position: fixed;
+    width: 100vw;
+    top: 0; }
 
 .g-title {
   font-size: 40px;

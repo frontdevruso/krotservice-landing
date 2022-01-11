@@ -106,7 +106,10 @@ svg {
 }
 
 .menu-lock .header {
-    border: none
+    border: none;
+    position: fixed;
+    width: 100vw;
+    top: 0
 }
 
 .g-title {
