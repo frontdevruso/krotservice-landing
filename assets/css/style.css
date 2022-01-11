@@ -5,7 +5,8 @@ html {
 body {
   font-size: 20px;
   color: #212121;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px; }
 
 a {
   text-decoration: none; }
@@ -45,6 +46,10 @@ svg {
 .main-service:hover .main-service__icon::before, .main-service:hover .main-service__icon::after {
   animation: hiddenCircles 1s linear infinite; }
 
+@media (max-width: 1024px) {
+  .main-service__icon::before, .main-service__icon::after {
+    animation: hiddenCircles 1s linear infinite; } }
+
 @-webkit-keyframes hiddenCircles {
   0% {
     opacity: 1; }
@@ -71,7 +76,8 @@ svg {
   overflow: hidden;
   touch-action: none;
   -ms-touch-action: none;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  height: 100vh; }
   .menu-lock .header {
     border: none; }
 
@@ -332,7 +338,7 @@ svg {
 .menu {
   width: calc(100% - 30px);
   height: 100vh;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -349,7 +355,7 @@ svg {
 .menu__container {
   overflow: auto;
   height: 100%;
-  margin-top: 88px;
+  padding-top: 88px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -423,7 +429,9 @@ svg {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size: 24px; }
+    font-size: 24px;
+    display: flex;
+    justify-content: end; }
     @media (max-width: 768px) {
       .menu__contacts-phone a {
         font-size: 20px; } }
@@ -802,8 +810,10 @@ svg {
       display: flex;
       align-items: center;
       justify-content: center; }
-      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb a {
-        background-color: #F6F6F6; }
+      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
+        background-color: #e5e2e2; }
+      .footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link:not(:last-child) {
+        margin-right: 0.5em; }
       .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
         color: #212121;
         text-decoration: none;
@@ -889,6 +899,7 @@ svg {
           position: absolute;
           left: -15px;
           top: -4em;
+          min-width: 320px;
           width: 90vw;
           height: 110%; } }
       @media (max-width: 768px) {
@@ -1775,8 +1786,12 @@ svg {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
+    @media (max-width: 1024px) {
+      .main-services__list {
+        margin-left: 5px; } }
     @media (max-width: 768px) {
       .main-services__list {
+        margin-left: auto;
         padding-bottom: 40px; } }
     @media (max-width: 576px) {
       .main-services__list {
@@ -1853,8 +1868,15 @@ svg {
     left: 0;
     width: 10px;
     height: 50px;
+    background: -webkit-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -moz-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -o-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    -webkit-clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
+    -webkit-background-size: 50000% 50000%;
+    -moz-background-size: 50000%;
+    -o-background-size: 50000%;
     background-size: 50000%; }
     .main-service__line--1 {
       bottom: 25px;
@@ -1928,29 +1950,31 @@ svg {
         width: 90%; } }
   .main-service:nth-child(2) .main-service__icon {
     margin-bottom: 52px; }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .main-service:nth-child(2):hover .main-service__line {
       animation: gradient 1s infinite linear; } }
-  @media (max-width: 768px) {
-    .main-service:nth-child(2).swiper-slide-active .main-service__line {
+  @media (max-width: 1024px) {
+    .main-service:nth-child(2) .main-service__line {
       animation: gradient 1s infinite linear; } }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .main-service:nth-child(3):hover .main-service__icon svg {
       animation: position 1s infinite linear; } }
-  @media (max-width: 768px) {
-    .main-service:nth-child(3).swiper-slide-active .main-service__icon svg {
+  @media (max-width: 1024px) {
+    .main-service:nth-child(3) .main-service__icon svg {
       animation: position 1s infinite linear; } }
   .main-service:nth-child(3) .main-service__icon:before {
     bottom: 0; }
   .main-service:nth-child(3) .main-service__icon:after {
     bottom: 0; }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .main-service:nth-child(4):hover:before {
       animation: gradient 1s infinite linear; } }
-  @media (max-width: 768px) {
-    .main-service:nth-child(4).swiper-slide-active:before {
+  @media (max-width: 1024px) {
+    .main-service:nth-child(4):before {
       animation: gradient 1s infinite linear; } }
   .main-service:nth-child(4):before {
+    content: "";
+    display: inline-block;
     content: "";
     display: inline-block;
     position: absolute;
@@ -1960,9 +1984,20 @@ svg {
     left: 50%;
     width: 60px;
     height: 60px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+    background: -webkit-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -moz-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    background: -o-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+    -webkit-background-size: 15000% 15000%;
+    -moz-background-size: 15000%;
+    -o-background-size: 15000%;
     background-size: 15000%; }
     @media (max-width: 1024px) {
       .main-service:nth-child(4):before {
@@ -2014,27 +2049,37 @@ svg {
 
 @-webkit-keyframes gradient {
   0% {
-    background-position: 1% 0%; }
+    background-position-x: 1%;
+    background-position-y: 0%; }
   25% {
-    background-position: 60% 0%; }
+    background-position-x: 60%;
+    background-position-y: 0%; }
   50% {
-    background-position: 100% 0%; }
+    background-position-x: 100%;
+    background-position-y: 0%; }
   75% {
-    background-position: 60% 0%; }
+    background-position-x: 60%;
+    background-position-y: 0%; }
   100% {
-    background-position: 1% 0%; } }
+    background-position-x: 1%;
+    background-position-y: 0%; } }
 
 @keyframes gradient {
   0% {
-    background-position: 1% 0%; }
+    background-position-x: 1%;
+    background-position-y: 0%; }
   25% {
-    background-position: 60% 0%; }
+    background-position-x: 60%;
+    background-position-y: 0%; }
   50% {
-    background-position: 100% 0%; }
+    background-position-x: 100%;
+    background-position-y: 0%; }
   75% {
-    background-position: 60% 0%; }
+    background-position-x: 60%;
+    background-position-y: 0%; }
   100% {
-    background-position: 1% 0%; } }
+    background-position-x: 1%;
+    background-position-y: 0%; } }
 
 .selectivity {
   padding: 4em 0; }

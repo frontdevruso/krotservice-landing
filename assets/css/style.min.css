@@ -7,7 +7,8 @@ html {
 body {
     font-size: 20px;
     color: #212121;
-    font-family: Montserrat,sans-serif
+    font-family: Montserrat,sans-serif;
+    min-width: 320px
 }
 
 a {
@@ -58,6 +59,13 @@ svg {
     animation: a 1s linear infinite
 }
 
+@media (max-width:1024px) {
+    .main-service__icon:after,.main-service__icon:before {
+        -webkit-animation: a 1s linear infinite;
+        animation: a 1s linear infinite
+    }
+}
+
 @-webkit-keyframes a {
     0% {
         opacity: 1
@@ -91,6 +99,10 @@ svg {
     touch-action: none;
     -ms-touch-action: none;
     -webkit-appearance: none
+}
+
+.menu-lock {
+    height: 100vh
 }
 
 .menu-lock .header {
@@ -452,7 +464,7 @@ svg {
 .menu {
     width: calc(100% - 30px);
     height: 100vh;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -472,7 +484,7 @@ svg {
 .menu__container {
     overflow: auto;
     height: 100%;
-    margin-top: 88px;
+    padding-top: 88px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -594,7 +606,11 @@ svg {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 24px
+    font-size: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: end
 }
 
 @media (max-width:768px) {
@@ -1220,11 +1236,12 @@ svg {
     justify-content: center
 }
 
-.footer__messengers--mb .messenger-link {
-    background-color: #e5e2e2;
+.footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link {
+    background-color: #e5e2e2
 }
-.footer__messengers--mb .messenger-link:not(:last-child) {
-    margin-right: 0.5em;
+
+.footer__container--mobile .footer__contacts--mb .footer__messengers--mb .messenger-link:not(:last-child) {
+    margin-right: .5em
 }
 
 .footer__container--mobile .footer__contacts--mb .footer__messengers--mb__tel {
@@ -1362,6 +1379,7 @@ svg {
         position: absolute;
         left: -15px;
         top: -4em;
+        min-width: 320px;
         width: 90vw;
         height: 110%
     }
@@ -2804,8 +2822,15 @@ svg {
     grid-template-columns: 1fr 1fr 1fr
 }
 
+@media (max-width:1024px) {
+    .main-services__list {
+        margin-left: 5px
+    }
+}
+
 @media (max-width:768px) {
     .main-services__list {
+        margin-left: auto;
         padding-bottom: 40px
     }
 }
@@ -3047,29 +3072,29 @@ svg {
     margin-bottom: 52px
 }
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
     .main-service:nth-child(2):hover .main-service__line {
         -webkit-animation: c 1s infinite linear;
         animation: c 1s infinite linear
     }
 }
 
-@media (max-width:768px) {
-    .main-service:nth-child(2).swiper-slide-active .main-service__line {
+@media (max-width:1024px) {
+    .main-service:nth-child(2) .main-service__line {
         -webkit-animation: c 1s infinite linear;
         animation: c 1s infinite linear
     }
 }
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
     .main-service:nth-child(3):hover .main-service__icon svg {
         -webkit-animation: b 1s infinite linear;
         animation: b 1s infinite linear
     }
 }
 
-@media (max-width:768px) {
-    .main-service:nth-child(3).swiper-slide-active .main-service__icon svg {
+@media (max-width:1024px) {
+    .main-service:nth-child(3) .main-service__icon svg {
         -webkit-animation: b 1s infinite linear;
         animation: b 1s infinite linear
     }
@@ -3079,15 +3104,15 @@ svg {
     bottom: 0
 }
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
     .main-service:nth-child(4):hover:before {
         -webkit-animation: c 1s infinite linear;
         animation: c 1s infinite linear
     }
 }
 
-@media (max-width:768px) {
-    .main-service:nth-child(4).swiper-slide-active:before {
+@media (max-width:1024px) {
+    .main-service:nth-child(4):before {
         -webkit-animation: c 1s infinite linear;
         animation: c 1s infinite linear
     }
@@ -3182,45 +3207,55 @@ svg {
 
 @-webkit-keyframes c {
     0% {
-        background-position: 1% 0
+        background-position-x: 1%;
+        background-position-y: 0
     }
 
     25% {
-        background-position: 60% 0
+        background-position-x: 60%;
+        background-position-y: 0
     }
 
     50% {
-        background-position: 100% 0
+        background-position-x: 100%;
+        background-position-y: 0
     }
 
     75% {
-        background-position: 60% 0
+        background-position-x: 60%;
+        background-position-y: 0
     }
 
     to {
-        background-position: 1% 0
+        background-position-x: 1%;
+        background-position-y: 0
     }
 }
 
 @keyframes c {
     0% {
-        background-position: 1% 0
+        background-position-x: 1%;
+        background-position-y: 0
     }
 
     25% {
-        background-position: 60% 0
+        background-position-x: 60%;
+        background-position-y: 0
     }
 
     50% {
-        background-position: 100% 0
+        background-position-x: 100%;
+        background-position-y: 0
     }
 
     75% {
-        background-position: 60% 0
+        background-position-x: 60%;
+        background-position-y: 0
     }
 
     to {
-        background-position: 1% 0
+        background-position-x: 1%;
+        background-position-y: 0
     }
 }
 
