@@ -1,0 +1,76 @@
+.certificates {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 94px;
+        @media (max-width: 1024px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        margin-bottom: 34px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+        @media (max-width: 576px) {
+            font-size: 25px;
+        }
+        @media (max-width: 360px) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-slider {
+        padding: 0 20px;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+        &__wrapper {
+            @media (max-width: 768px) {
+                flex-direction: row !important;
+            }
+        }
+    }
+    &__item {
+        @media (max-width: 768px) {
+            margin-top: 0 !important;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 10px solid #f6f6f6;
+
+    @media (max-width: 576px) {
+        border: 5px solid #f6f6f6;
+    }
+
+    &__image {
+        display: block;
+        width: 255px;
+        height: 100%;
+        object-fit: cover;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

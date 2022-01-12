@@ -1,0 +1,198 @@
+.consultation {
+    background-color: $darkBlue;
+    color: white;
+
+    background: url('./../images/con-car.png') $darkBlue no-repeat center right;
+
+    padding: 3.5em 0;
+
+    h1 {
+        font-size: 2em;
+        line-height: 110%;
+        max-width: 13.2em;
+        margin: 0;
+
+        @media (max-width: 1230px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 1em;
+            max-width: none;
+        }
+    }
+
+    &__paragraph {
+        font-size: 0.9em;
+        font-weight: 500;
+        line-height: 160%;
+
+        max-width: 34.7em;
+        padding: 0.833em 0 1.1em;
+
+        @media (max-width: 1230px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 0.7em;
+            margin: 0;
+        }
+    }
+
+    .con-worker {
+        position: absolute;
+        right: -4em;
+        bottom: -3.5em;
+
+        @media (max-width: 1400px) {
+            right: 0;
+        }
+
+        @media (max-width: 1230px) {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 1910px) {
+        background: $darkBlue;
+    }
+
+    @media (max-width: 1230px) {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.8em;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 1em;
+        text-align: left;
+        padding: 1.5em 0;
+    }
+}
+
+.consultation__container {
+    width: auto;
+    position: relative;
+}
+
+.consultation__input {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    max-width: 31.2em;
+
+    background-color: white;
+    border-radius: 5em;
+    margin-bottom: 0.75em;
+
+    input {
+        width: auto;
+
+        font-size: 0.8em;
+        font-weight: 500;
+        border-radius: 5em;
+
+        background-color: white;
+        border: transparent;
+
+        &:focus {
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+
+        &::placeholder {
+            font-weight: 400;
+            color: #818181;
+        }
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+            padding: 25px 40px;
+        }
+    }
+
+    .consultation__btn {
+        white-space: nowrap;
+        padding: 1.78em 3.57em;
+        font-size: 0.7em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid $lightBlue;
+
+        @media (max-width: 575px) {
+            margin-top: 1em;
+        }
+    }
+
+    @media (max-width: 1230px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+.consultation__agreement {
+    font-size: 0.6em;
+    line-height: 160%;
+
+    a {
+        border-bottom: 1px solid rgba(#fff, 0.2);
+    }
+
+    @media (max-width: 1230px) {
+        margin-top: 1.5em;
+    }
+
+    @media (max-width: 575px) {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 0.6em;
+    }
+}
+
+.worker-img {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        position: relative;
+
+        .worker {
+            width: 70%;
+            height: 70%;
+
+            margin: 0 auto;
+            z-index: 10;
+        }
+
+        .car {
+            width: 100%;
+            height: auto;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 10%;
+        }
+    }
+}

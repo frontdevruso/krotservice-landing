@@ -1,0 +1,223 @@
+.prices {
+    display: flex;
+    background: rgba(208, 208, 208, 0.05);
+
+    padding: 4em 0;
+    position: relative;
+    background: url('./../images/svg/prices-curves.svg') rgba(208, 208, 208, 0.05) center no-repeat;
+
+    @media (max-width: 1200px) {
+        font-size: 17px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 3em 0;
+    }
+
+    @media (max-width: 550px) {
+        padding: 2em 0;
+    }
+}
+
+.prices__container {
+    position: relative;
+    z-index: 10;
+}
+
+.prices__heading {
+    font-weight: 800;
+    font-family: 'FuturaPT', sans-serif;
+    font-size: 2em;
+
+    max-width: 20em;
+    margin-bottom: 1em;
+    
+    line-height: 1.1em;
+    text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+        font-size: 1.7em;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 1.5em;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 18px;
+    }
+}
+
+.price__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+
+    width: auto;
+    height: auto;
+
+    &-item {
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0 0.1em 0.2em rgba(38, 38, 38, 0.02), 0 0.1em 0.2em rgba(38, 38, 38, 0.02);
+        border-radius: 0.5em;
+
+        overflow: hidden;
+        transition: .3s;
+        height: fit-content;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            padding: 2em;
+
+            h2 {
+                flex-direction: column;
+                text-transform: uppercase;
+
+                font-weight: 800;
+                font-family: 'FuturaPT', sans-serif;
+                color: $lightBlack;
+
+                font-size: 1.3em;
+                line-height: 120%;
+
+                b {
+                    color: $lightBlue;
+                }
+            }
+
+            .price {
+                font-size: 1em;
+                font-family: 'FuturaPT', sans-serif;
+                font-weight: 700;
+                
+                margin-top: 0.5em;
+                color: $redBrick;
+            }
+
+            .p-btn {
+                width: auto;
+                display: flex;
+                justify-content: center;
+
+                margin-top: auto;
+                padding: 1.15em 0;
+                color: $lightBlack;
+
+                border: 0.05em solid $lightBlue;
+
+                span {
+                    font-size: 0.7em;
+                    font-weight: 700;
+                    line-height: 100%;
+                }
+            }
+
+            & * {
+                transition: .3s;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: 14.75em;
+            
+            border-radius: .5em 0 0 .5em;
+            object-fit: cover;
+        }
+
+        &:hover {
+            background: #242843;
+            h2, h2 b, span, .price {
+                color: white;
+            }
+
+            .p-btn {
+                color: white;
+                background: $lightBlue;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            height: fit-content;
+
+            &-info {
+                font-size: 0.9em;
+
+                h2 {
+                    font-size: 1.1em;
+                }
+
+                .p-btn {
+                    font-size: 0.8em;
+                    padding: 1.2em 0;
+                }
+            }
+
+            img {
+                height: 13em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 20em;
+
+                border-radius: 0;
+            }
+
+            &-info {
+                width: auto;
+                font-size: 1.4em;
+                text-align: center;
+
+                h2 {
+                    font-size: 1.1em;
+                }
+
+                .p-btn {
+                    margin-top: 1.5em;
+                    width: auto;
+                }
+            }
+        }
+
+        @media (max-width: 550px) {
+            font-size: 0.9em;
+
+            &-info {
+                padding: 1em;
+
+                h2 {
+                    font-size: 1em;
+                }
+            }
+
+            img {
+                height: 17em;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        border-radius: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 30px;
+
+        grid-template-columns: 0;
+        grid-gap: 0;
+    }
+}

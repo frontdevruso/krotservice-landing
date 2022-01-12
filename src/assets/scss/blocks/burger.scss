@@ -1,0 +1,80 @@
+.burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4096fc;
+    transition: transform 0.5s;
+
+    padding: 0;
+
+    @media (max-width: 1024px) {
+        display: flex;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        transform: translate(-50%, -50%);
+        transition: background 0.5s, transform 0.5s;
+        background-color: #fff;
+        border-radius: 100px;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 2px;
+            transform: translateY(-6px);
+            transition: transform 0.5s, width 0.5s;
+            background-color: #fff;
+            transform-origin: 50% 50%;
+            border-radius: 100px;
+        }
+
+        &:after {
+            width: 13px;
+            left: auto;
+            right: 0;
+            transform: translateY(6px);
+        }
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: transparent;
+        stroke-width: 2px;
+    }
+
+    &.isOpen {
+        transform: rotate(180deg);
+
+        span {
+            background: transparent;
+        }
+
+        span:before {
+            transform: translateY(0) rotate(45deg);
+        }
+
+        span:after {
+            width: 18px;
+            left: 0;
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        &:hover {
+            svg {
+                fill: rgba(#fff, 0.1);
+            }
+        }
+    }
+}

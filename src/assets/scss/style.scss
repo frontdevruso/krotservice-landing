@@ -1,0 +1,156 @@
+
+
+@import "vars";
+@import "mixins";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 20px;
+    color: $lightBlack;
+
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: flex;
+    font-weight: 700;
+    margin: 0;
+}
+
+ul {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+svg {
+    object-fit: cover;
+}
+
+.main-service {
+    &:hover {
+        .main-service__icon::before, .main-service__icon::after{
+            animation: hiddenCircles 1s linear infinite;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-service__icon::before, .main-service__icon::after{
+        animation: hiddenCircles 1s linear infinite;
+    }
+}
+
+@-webkit-keyframes hiddenCircles {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hiddenCircles {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lock {
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-appearance: none;
+}
+
+.menu-lock {
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-appearance: none;
+    height: 100vh;
+    
+    .header {
+        border: none;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+    }
+}
+
+@import 'global';
+@import 'fonts';
+
+@import "./blocks/burger.scss";
+@import "./blocks/menu.scss";
+
+@import "./limbs/header.scss";
+@import "./limbs/footer.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/demonstration.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/prices.scss";
+@import "./blocks/place-tariff.scss";
+@import "./blocks/emergency.scss";
+@import "./blocks/main-services.scss";
+@import "./blocks/selectivity.scss";
+@import "./blocks/consultation.scss";
+@import "./blocks/works.scss";
+@import "./blocks/pagination-arrows.scss";
+@import "./blocks/pagination-dots.scss";
+@import "./blocks/about.scss";
+@import "./blocks/certificates.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/location.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/video.scss";
+@import "./blocks/thanks-page.scss";
+@import "./blocks/modal-policy.scss";
+
+@import '_vendor/_normalize.scss';
