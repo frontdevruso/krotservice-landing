@@ -106,7 +106,7 @@ function css(cb) {
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(postcss([ autoprefixer('last 99 version') ]))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 
