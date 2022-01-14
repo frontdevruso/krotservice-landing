@@ -2034,7 +2034,7 @@ svg {
     left: 50%;
     width: 60px;
     height: 60px;
-    transform: translateX(-50%);
+    left: calc(50% - 30px);
     clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(179.9deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background-size: 15000%; }
@@ -2044,7 +2044,7 @@ svg {
     @media (max-width: 768px) {
       .main-service:nth-child(4):before {
         background: linear-gradient(#fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-        animation: light 1s infinite linear; } }
+        animation: position 1s infinite linear; } }
   .main-service:nth-child(4) .main-service__icon {
     margin-bottom: 92px; }
     .main-service:nth-child(4) .main-service__icon:before {
@@ -2089,28 +2089,6 @@ svg {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
-
-@-webkit-keyframes light {
-  0% {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%); }
-  50% {
-    -webkit-transform: translateY(5px), translateX(-50%);
-    transform: translateY(5px) translateX(-50%); }
-  100% {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%); } }
-
-@keyframes light {
-  0% {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%); }
-  50% {
-    -webkit-transform: translateY(5px) translateX(-50%);
-    transform: translateY(5px) translateX(-50%); }
-  100% {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%); } }
 
 @-webkit-keyframes gradient {
   0% {
