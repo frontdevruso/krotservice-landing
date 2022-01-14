@@ -389,6 +389,7 @@ svg {
 .menu {
   width: calc(100% - 30px);
   height: 100vh;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   background-color: #242843;
@@ -1912,11 +1913,7 @@ svg {
     left: 0;
     width: 10px;
     height: 50px;
-    background: -webkit-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    background: -moz-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    background: -o-linear-gradient(270.1deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    -webkit-clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
     -webkit-background-size: 50000% 50000%;
     -moz-background-size: 50000%;
@@ -1942,6 +1939,9 @@ svg {
       bottom: -39px;
       left: 33px;
       transform: rotate(-30deg); }
+    @media (max-width: 768px) {
+      .main-service__line {
+        background: linear-gradient(white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%); } }
   .main-service__heading {
     margin: 50px 0 20px;
     text-align: center;
@@ -2000,6 +2000,9 @@ svg {
   @media (max-width: 1024px) {
     .main-service:nth-child(2) .main-service__line {
       animation: gradient 1s infinite linear; } }
+  @media (max-width: 768px) {
+    .main-service:nth-child(2) .main-service__icon-wrapper {
+      animation: position 1s infinite linear; } }
   @media (min-width: 1024px) {
     .main-service:nth-child(3):hover .main-service__icon svg {
       animation: position 1s infinite linear; } }
@@ -2016,6 +2019,9 @@ svg {
   @media (max-width: 1024px) {
     .main-service:nth-child(4):before {
       animation: gradient 1s infinite linear; } }
+  @media (max-width: 768px) {
+    .main-service:nth-child(4) .main-service-3, .main-service:nth-child(4) .main-service-3::before {
+      animation: position 1s infinite linear; } }
   .main-service:nth-child(4):before {
     content: "";
     display: inline-block;
@@ -2028,24 +2034,17 @@ svg {
     left: 50%;
     width: 60px;
     height: 60px;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
-    background: -webkit-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    background: -moz-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    background: -o-linear-gradient(270.1deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
     background: linear-gradient(179.9deg, #fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-    -webkit-background-size: 15000% 15000%;
-    -moz-background-size: 15000%;
-    -o-background-size: 15000%;
     background-size: 15000%; }
     @media (max-width: 1024px) {
       .main-service:nth-child(4):before {
         top: 125px; } }
+    @media (max-width: 768px) {
+      .main-service:nth-child(4):before {
+        background: linear-gradient(#fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
+        animation: light 1s infinite linear; } }
   .main-service:nth-child(4) .main-service__icon {
     margin-bottom: 92px; }
     .main-service:nth-child(4) .main-service__icon:before {
@@ -2090,6 +2089,28 @@ svg {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+@-webkit-keyframes light {
+  0% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%); }
+  50% {
+    -webkit-transform: translateY(5px), translateX(-50%);
+    transform: translateY(5px) translateX(-50%); }
+  100% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%); } }
+
+@keyframes light {
+  0% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%); }
+  50% {
+    -webkit-transform: translateY(5px) translateX(-50%);
+    transform: translateY(5px) translateX(-50%); }
+  100% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%); } }
 
 @-webkit-keyframes gradient {
   0% {
