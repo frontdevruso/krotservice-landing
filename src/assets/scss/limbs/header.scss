@@ -1,16 +1,11 @@
 .header {
     font-size: 20px;
-    padding: 1.25em 0;
 
     background: #242843;
     color: white;
-
-    position: relative;
     z-index: 30;
 
-    @media (max-width: 500px) {
-        padding: 0.75em 0;
-    }
+    position: relative;
 
     @media (max-width: 1024px) {
         border-bottom: 0.05em solid #383C53;
@@ -19,10 +14,16 @@
 
 .header__container {
     width: auto;
+    z-index: 35;
+    padding: 1.25em 15px 1.25em;
     
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+        padding: 0.75em 15px 0.75em;
+    }
 }
 
 .header__logo {
