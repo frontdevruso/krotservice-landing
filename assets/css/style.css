@@ -72,7 +72,7 @@ svg {
   -webkit-appearance: none; }
 
 .menu-lock {
-  overflow: hidden;
+  overflow: auto;
   touch-action: none;
   -ms-touch-action: none;
   -webkit-appearance: none;
