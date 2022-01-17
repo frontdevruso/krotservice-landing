@@ -80,7 +80,7 @@ svg {
   .menu-lock .header {
     border: none;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0; }
 
 .g-title {
@@ -389,7 +389,7 @@ svg {
 .menu {
   width: calc(100% - 30px);
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   background-color: #242843;
@@ -405,7 +405,7 @@ svg {
   height: calc(100% - 90px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  overflow-y: auto; }
 
 .m-open {
   z-index: -10;
@@ -438,7 +438,8 @@ svg {
 .menu__links {
   display: flex;
   flex-direction: column;
-  padding: 25px 20% 25px; }
+  padding: 25px 20% 25px;
+  height: 100%; }
   .menu__links a {
     color: white;
     text-transform: uppercase;
