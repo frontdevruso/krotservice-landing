@@ -75,8 +75,7 @@ svg {
   overflow: auto;
   touch-action: none;
   -ms-touch-action: none;
-  -webkit-appearance: none;
-  height: 100vh; }
+  -webkit-appearance: none; }
   .menu-lock .header {
     border: none;
     position: fixed;
@@ -608,25 +607,26 @@ svg {
       .header__contacts-phone a:hover {
         color: #4096fc; }
     @media (max-width: 1024px) {
-      .header__contacts-phone {
+      .header__contacts-phone p {
         display: none; } }
 
-.mobile-call {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  margin: 0 15px;
-  padding: 0;
-  background: url(../images/svg/tel.svg) rgba(255, 255, 255, 0.1) center no-repeat;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; }
-  @media (max-width: 1024px) {
-    .mobile-call {
-      display: flex; } }
-  @media (max-width: 768px) {
-    .mobile-call {
-      display: flex; } }
+@media (max-width: 1024px) {
+  .mobile-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 0;
+    background: url(../images/svg/tel.svg) rgba(255, 255, 255, 0.1) center no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; } }
+
+@media (max-width: 768px) {
+  .mobile-call {
+    display: flex; } }
 
 .h-btn {
   width: fit-content;
@@ -2609,7 +2609,7 @@ svg {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background-color: #bebebe;
+    background-color: #686565;
     transition: background-color 0.3s;
     cursor: pointer; }
     @media (max-width: 360px) {
