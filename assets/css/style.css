@@ -506,7 +506,7 @@ svg {
 
 .menu__warning {
   display: flex;
-  padding: 20px 0; }
+  padding: 20px 0 40px; }
   .menu__warning-img {
     margin-top: 3px; }
     .menu__warning-img svg {
@@ -525,6 +525,9 @@ svg {
     @media (max-width: 500px) {
       .menu__warning p {
         font-size: 12px; } }
+    @media (max-width: 400px) {
+      .menu__warning p {
+        font-size: 10px; } }
 
 .header {
   font-size: 20px;
