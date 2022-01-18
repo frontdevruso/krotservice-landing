@@ -409,8 +409,7 @@ svg {
   padding-top: 120px;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
   @media (max-width: 500px) {
     .menu__container {
       padding-top: 100px; } }
@@ -446,7 +445,8 @@ svg {
 .menu__links {
   display: flex;
   flex-direction: column;
-  padding: 0 20% 25px; }
+  padding: 0 20% 25px;
+  height: 100%; }
   .menu__links a {
     color: white;
     text-transform: uppercase;
