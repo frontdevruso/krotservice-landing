@@ -1,0 +1,113 @@
+.policy {
+    display: flex;
+    background-color: #F6F6F6;
+    padding: 1.25em 0 4.2em;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bread-crumbs {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 1.4em;
+
+        svg {
+            width: 0.25em;
+            height: 0.4em;
+
+            margin: 0 0.4em 0 0.6em;
+        }
+
+        a, p {
+            color: black;
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+
+        a {
+            text-decoration: underline;
+            text-decoration-color: rgba(33, 33, 33, 0.2);
+        }
+
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    &__page {
+        padding: 3em;
+        width: 100%;
+
+        background-color: white;
+
+        border-radius: 0.5em;
+        box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+
+        h1 {
+            max-width: 565px;
+            margin-bottom: 0.75em;
+
+            @media (max-width: 768px) {
+                font-size: 1.2em;
+                max-width: 365px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 0.9em;
+                max-width: none;
+            }
+        }
+
+        &-show {
+            display: none;
+            padding: 0;
+            margin: 0 auto;
+            width: fit-content;
+
+            font-size: 0.9em;
+            font-weight: 700;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: #C5C5C5;
+
+            border-radius: 0;
+            appearance: none;
+            box-sizing: border-box;
+            background-color: transparent;
+
+            @media (max-width: 576px) {
+                display: flex;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 0.7em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 2em;
+        }
+
+        @media (max-width: 450px) {
+            padding: 1.25em 0.75em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.75em 0 2em;
+    }
+
+    @media (max-width: 450px) {
+        padding-bottom: 0.5em;
+    }
+}
+
+.policy-body-wrapper {
+    .footer {
+        padding-top: 1em;
+    }
+}

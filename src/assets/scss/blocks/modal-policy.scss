@@ -26,6 +26,18 @@
 
         &--padd {
             padding-bottom: 2em;
+
+            @media (max-width: 450px) {
+                padding-bottom: 1em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+
+            &--open {
+                display: flex;
+            }
         }
 
         @media (max-width: 576px) {

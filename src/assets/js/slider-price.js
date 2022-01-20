@@ -1,6 +1,6 @@
 // price slider
 
-import Swiper, { Pagination } from "swiper";
+import Swiper, { Pagination, Autoplay } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
     const priceSlider = document.querySelector(".price-slider");
@@ -11,10 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const initializeSlider = () => {
 
             mySwiper = new Swiper(priceSlider, {
-                modules: [Pagination],
+                modules: [Pagination, Autoplay],
                 slidesPerView: 1,
                 spaceBetween: 25,
-
+                autoplay: {
+                    delay: 1200,
+                    pauseOnMouseEnter: true,
+                },
                 pagination: {
                     el: ".prices-slider__pagination",
                     clickable: true,
@@ -22,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 breakpoints: {
                     769: {
                         slidesPerView: 2,
+                        autoplay: {
+                            delay: 1700,
+                            pauseOnMouseEnter: true,
+                        },
                     }
                 }
             });

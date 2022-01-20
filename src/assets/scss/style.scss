@@ -115,11 +115,20 @@ svg {
     -webkit-appearance: none;
     height: 100vh;
     
-    .header {
-        border: none;
-        position: fixed;
-        width: 100vw;
-        top: 0;
+    @media (max-width: 1024px) {
+        .header {
+            border: none;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+    
+            
+            &__container {
+                position: absolute;
+                top: 0;
+                width: calc(100% - 30px);
+            }
+        }
     }
 }
 
@@ -152,5 +161,6 @@ svg {
 @import "./blocks/video.scss";
 @import "./blocks/thanks-page.scss";
 @import "./blocks/modal-policy.scss";
+@import "./blocks/policy.scss";
 
 @import '_vendor/_normalize.scss';
