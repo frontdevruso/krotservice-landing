@@ -1746,7 +1746,6 @@ svg {
       padding: 40px 0 20px; } }
   .main-services__line {
     position: absolute;
-    z-index: 2;
     top: 27%;
     right: 0;
     width: 100%;
@@ -2009,6 +2008,8 @@ svg {
     margin-bottom: 52px; }
   @media (min-width: 1024px) {
     .main-service:nth-child(2):hover .main-service__line {
+      animation: gradient 1s infinite linear; }
+    .main-service:nth-child(2) .main-service__icon:hover .main-service__line {
       animation: gradient 1s infinite linear; } }
   @media (max-width: 1024px) {
     .main-service:nth-child(2) .main-service__line {
