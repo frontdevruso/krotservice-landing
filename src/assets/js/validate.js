@@ -500,8 +500,6 @@ function _defineProperty(obj, key, value) {
                 }
                 this.$form.submit();
             }
-            console.log('shit works');
-            window.location.href='./thanks.html';
         },
 
         setForm: function setForm(form) {
@@ -1113,15 +1111,9 @@ const validateForm10 = document.querySelector(".validate-form10");
 if(validateForm) {
     new window.JustValidate(".validate-form", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1129,15 +1121,9 @@ if(validateForm) {
 if(validateForm2) {
     new window.JustValidate(".validate-form2", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1145,15 +1131,9 @@ if(validateForm2) {
 if(validateForm3) {
     new window.JustValidate(".validate-form3", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1161,15 +1141,9 @@ if(validateForm3) {
 if(validateForm4) {
     new window.JustValidate(".validate-form4", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1177,15 +1151,9 @@ if(validateForm4) {
 if(validateForm5) {
     new window.JustValidate(".validate-form5", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1193,15 +1161,9 @@ if(validateForm5) {
 if(validateForm6) {
     new window.JustValidate(".validate-form6", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1209,15 +1171,9 @@ if(validateForm6) {
 if(validateForm7) {
     new window.JustValidate(".validate-form7", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1225,15 +1181,9 @@ if(validateForm7) {
 if(validateForm8) {
     new window.JustValidate(".validate-form8", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1241,15 +1191,9 @@ if(validateForm8) {
 if(validateForm9) {
     new window.JustValidate(".validate-form9", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
+                minLength: 18,
             },
         }
     });
@@ -1257,18 +1201,9 @@ if(validateForm9) {
 if(validateForm10) {
     new window.JustValidate(".validate-form10", {
         rules: {
-            name: {
-                required: true,
-            },
-            text: {
-                required: true,
-            },
             tel: {
                 required: true,
-                minLength: 17,
-            },
-            radio: {
-                required: true,
+                minLength: 18,
             },
         }
     });

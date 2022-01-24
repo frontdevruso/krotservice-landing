@@ -13,7 +13,6 @@
 
     &__line {
         position: absolute;
-        z-index: 2;
         top: 27%;
 
         right: 0;
@@ -384,6 +383,14 @@
             &:hover {
                 .main-service__line {
                     animation: gradient 1s infinite linear;
+                }
+            }
+
+            .main-service__icon {
+                &:hover {
+                    .main-service__line {
+                        animation: gradient 1s infinite linear;
+                    }
                 }
             }
         }
