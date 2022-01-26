@@ -75,8 +75,7 @@ svg {
   overflow: auto;
   touch-action: none;
   -ms-touch-action: none;
-  -webkit-appearance: none;
-  height: 100vh; }
+  -webkit-appearance: none; }
   @media (max-width: 1024px) {
     .menu-lock .header {
       border: none;
@@ -395,7 +394,7 @@ svg {
 
 .menu {
   width: calc(100% - 30px);
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   position: absolute;
   z-index: 100;
@@ -416,8 +415,7 @@ svg {
 .menu__container {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
 .m-open {
   z-index: -10;
@@ -450,6 +448,7 @@ svg {
 .menu__links {
   display: flex;
   flex-direction: column;
+  height: 100%;
   padding: 120px 20% 25px; }
   .menu__links a {
     color: white;
