@@ -6,6 +6,6 @@ const tels = document.querySelectorAll("input[type=\"tel\"]");
 
 tels.forEach(el => {
     IMask(el, {
-        mask: "+{7} (000) 000 00 00"
+        mask: "+{0} (000) 000 00 00"
     });
 });
