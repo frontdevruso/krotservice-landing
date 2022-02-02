@@ -1959,9 +1959,10 @@ svg {
       bottom: -39px;
       left: 33px;
       transform: rotate(-30deg); }
-    @media (max-width: 768px) {
-      .main-service__line {
-        background: linear-gradient(white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%); } }
+    @supports (-webkit-touch-callout: none) {
+      @media (max-width: 768px) {
+        .main-service__line {
+          background: linear-gradient(white 0%, white 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%); } } }
   .main-service__heading {
     margin: 50px 0 20px;
     text-align: center;
@@ -2063,10 +2064,11 @@ svg {
     @media (max-width: 1024px) {
       .main-service:nth-child(4):before {
         top: 125px; } }
-    @media (max-width: 768px) {
-      .main-service:nth-child(4):before {
-        background: linear-gradient(#fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 80%, rgba(253, 255, 167, 0) 100%);
-        animation: light 1s infinite linear; } }
+    @supports (-webkit-touch-callout: none) {
+      @media (max-width: 768px) {
+        .main-service:nth-child(4):before {
+          background: linear-gradient(#fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 80%, rgba(253, 255, 167, 0) 100%);
+          animation: light 1s infinite linear; } } }
   .main-service:nth-child(4) .main-service__icon {
     margin-bottom: 92px; }
     .main-service:nth-child(4) .main-service__icon:before {
