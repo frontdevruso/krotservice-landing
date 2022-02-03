@@ -49,13 +49,14 @@ svg {
   .main-service__icon::before, .main-service__icon::after {
     animation: hiddenCircles 1s linear infinite; } }
 
-@-webkit-keyframes hiddenCircles {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.1; }
-  100% {
-    opacity: 1; } }
+@supports (-webkit-touch-callout: none) {
+  @-webkit-keyframes hiddenCircles {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0.1; }
+    100% {
+      opacity: 1; } } }
 
 @keyframes hiddenCircles {
   0% {
