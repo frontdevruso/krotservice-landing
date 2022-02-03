@@ -250,6 +250,14 @@
             background-image: url(../images/svg/circles.svg);
             background-repeat: no-repeat;
             background-size: cover;
+
+            &:hover {
+                animation: hiddenCircles 1s linear infinite;
+            }
+
+            @media (max-width: 1024px) {
+                animation: hiddenCircles 1s linear infinite;
+            }
         }
     }
 

@@ -67,11 +67,6 @@ svg {
     }
 }
 
-@media (max-width: 1024px) {
-    .main-service__icon::before, .main-service__icon::after{
-        animation: hiddenCircles 1s linear infinite;
-    }
-}
 
 @-webkit-keyframes hiddenCircles {
     0% { opacity: 1 }
