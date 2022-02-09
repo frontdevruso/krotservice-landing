@@ -1285,7 +1285,7 @@ svg {
     border-radius: 0.5em;
     overflow: hidden;
     transition: .3s;
-    height: fit-content; }
+    height: 100%; }
     .price__wrapper-item-info {
       display: flex;
       flex-direction: column;
@@ -1306,12 +1306,13 @@ svg {
         font-family: 'FuturaPT', sans-serif;
         font-weight: 700;
         margin-top: 0.5em;
+        margin-bottom: auto;
         color: #CA3C2F; }
       .price__wrapper-item-info .p-btn {
         width: auto;
         display: flex;
         justify-content: center;
-        margin-top: auto;
+        margin-top: 20px;
         padding: 1.15em 0;
         color: #212121;
         border: 0.05em solid #4096fc; }
@@ -1323,7 +1324,7 @@ svg {
         transition: .3s; }
     .price__wrapper-item img {
       width: 50%;
-      height: 14.75em;
+      height: 100%;
       border-radius: .5em 0 0 .5em;
       object-fit: cover; }
     .price__wrapper-item:hover {
@@ -1344,7 +1345,7 @@ svg {
             font-size: 0.8em;
             padding: 1.2em 0; }
         .price__wrapper-item img {
-          height: 13em; } }
+          height: 13.5em; } }
     @media (max-width: 768px) {
       .price__wrapper-item {
         flex-direction: column; }
