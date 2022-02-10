@@ -102,22 +102,21 @@
                 font-size: 0.7em;
                 
                 text-transform: uppercase;
-                line-height: 110%;
+                line-height: 130%;
                 margin: 0.25em 0 1em;
             }
 
             p {
                 font-size: 0.8em;
                 line-height: 160%;
+                margin-bottom: 1em;
 
                 a {
                     color: $lightBlue;
                     text-decoration: underline;
                     transition: .4s;
 
-                    &:hover {
-                        color: $darkBlue;
-                    }
+                    &:hover { color: $darkBlue }
                 }
             }
 
@@ -127,9 +126,7 @@
                 font-weight: 600;
             }
 
-            @media (max-width: 1330px) {
-                left: 2%;
-            }
+            @media (max-width: 1330px) { left: 2% }
 
             @media (max-width: 1200px) {
                 left: 50%;
@@ -142,19 +139,14 @@
                 padding: 2.5em;
             }
 
-            @media (max-width: 1024px) {
-                width: 18em;
-            }
+            @media (max-width: 1024px) { width: 18em }
 
             @media (max-width: 768px) {
                 font-size: 0.8em;
                 width: 15em;
                 height: fit-content;
 
-                p {
-                    font-size: 0.7em;
-                    margin-bottom: 0.7em;
-                }
+                p { font-size: 0.7em }
             }
 
             @media (max-width: 576px) {
@@ -162,14 +154,10 @@
                 top: 90%;
             }
 
-            @media (max-width: 450px) {
-                padding: 1em;
-            }
+            @media (max-width: 450px) { padding: 1em }
         }
 
-        @media (max-width: 1200px) {
-            width: auto;
-        }
+        @media (max-width: 1200px) { width: auto }
 
         &-video {
             margin-left: auto;
@@ -179,9 +167,7 @@
         }
     }
 
-    @media (max-width: 1200px) {
-        overflow: initial;
-    }
+    @media (max-width: 1200px) { overflow: initial }
 }
 
 .player__review--ill {
