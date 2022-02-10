@@ -2725,6 +2725,7 @@ svg {
   .about-section__video {
     margin: 0 auto;
     width: fit-content;
+    display: flex;
     border: 10px solid rgba(64, 150, 252, 0.2);
     box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
@@ -3080,11 +3081,12 @@ svg {
         font-weight: 600;
         font-size: 0.7em;
         text-transform: uppercase;
-        line-height: 110%;
+        line-height: 130%;
         margin: 0.25em 0 1em; }
       .reviews-slider__item-info p {
         font-size: 0.8em;
-        line-height: 160%; }
+        line-height: 160%;
+        margin-bottom: 1em; }
         .reviews-slider__item-info p a {
           color: #4096fc;
           text-decoration: underline;
@@ -3115,8 +3117,7 @@ svg {
           width: 15em;
           height: fit-content; }
           .reviews-slider__item-info p {
-            font-size: 0.7em;
-            margin-bottom: 0.7em; } }
+            font-size: 0.7em; } }
       @media (max-width: 576px) {
         .reviews-slider__item-info {
           font-size: 0.7em;
