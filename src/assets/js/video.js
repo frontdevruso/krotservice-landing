@@ -1,6 +1,7 @@
 import Plyr from "plyr";
 
-new Plyr("#player");
-new Plyr("#player2");
-new Plyr("#player3");
-new Plyr("#player4");
+const videos = document.querySelectorAll('.player__init');
+
+videos.forEach(function(video) {
+    new Plyr(video);
+})
