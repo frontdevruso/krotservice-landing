@@ -3085,8 +3085,13 @@ svg {
         margin: 0.25em 0 1em; }
       .reviews-slider__item-info p {
         font-size: 0.8em;
-        line-height: 160%;
-        margin-bottom: 1em; }
+        line-height: 145%;
+        margin-bottom: 1em;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        overflow: hidden; }
         .reviews-slider__item-info p a {
           color: #4096fc;
           text-decoration: underline;
