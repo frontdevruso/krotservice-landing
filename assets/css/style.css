@@ -1983,7 +1983,11 @@ svg {
     font-size: 14px;
     font-weight: 500;
     line-height: 170%;
-    margin: 0 auto; }
+    margin: 0 auto auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    overflow: hidden; }
     @media (max-width: 1200px) {
       .main-service__desc {
         height: 270px; } }
@@ -2006,6 +2010,7 @@ svg {
   .main-service__link {
     width: 87%;
     padding: 21px 0;
+    margin-bottom: 50px;
     font-size: 12px;
     line-height: 17px;
     text-decoration: none; }
