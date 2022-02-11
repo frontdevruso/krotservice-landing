@@ -108,8 +108,14 @@
 
             p {
                 font-size: 0.8em;
-                line-height: 160%;
+                line-height: 145%;
                 margin-bottom: 1em;
+                
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
 
                 a {
                     color: $lightBlue;
