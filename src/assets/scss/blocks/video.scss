@@ -17,9 +17,10 @@
     }
 
     @media (max-width: 1200px) { margin: 0 auto }
-    @media (max-width: 768px) { height: 350px }
-    @media (max-width: 576px) { height: 290px }
+    @media (max-width: 768px) { height: 350px; max-width: 600px; }
+    @media (max-width: 576px) { height: 290px; max-width: 450px; }
     @media (max-width: 420px) { height: 200px }
+    
 
     &:hover {
         .plyr__controls {
@@ -44,6 +45,11 @@
         padding: 0;
         opacity: 1;
 
+        svg {
+            width: 33px;
+            height: 33px;
+        }
+
         @media (max-width: 768px) {
             width: 80px !important;
             height: 80px;
@@ -64,18 +70,26 @@
             }
         }
 
-        &:hover {
-            background-color: #e30303 !important;
+        @media (max-width: 420px) { 
+            width: 40px !important;
+            height: 40px;
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }    
         }
 
-        svg {
-            width: 33px;
-            height: 33px;
-        }
+        &:hover { background-color: #e30303 !important }
+    }
+
+    .plyr__video-wrapper {
+        background-color: #fff !important;
     }
 
     video {
-        object-fit: cover;
+        object-fit: contain !important;
+        background: #fff !important;
     }
 }
 
