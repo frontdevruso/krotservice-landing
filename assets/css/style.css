@@ -3808,10 +3808,12 @@ svg {
       margin: 0 auto; } }
   @media (max-width: 768px) {
     .plyr, video, iframe {
-      height: 350px; } }
+      height: 350px;
+      max-width: 600px; } }
   @media (max-width: 576px) {
     .plyr, video, iframe {
-      height: 290px; } }
+      height: 290px;
+      max-width: 450px; } }
   @media (max-width: 420px) {
     .plyr, video, iframe {
       height: 200px; } }
@@ -3830,6 +3832,9 @@ svg {
     height: 100px;
     padding: 0;
     opacity: 1; }
+    .plyr__control--overlaid svg, video__control--overlaid svg, iframe__control--overlaid svg {
+      width: 33px;
+      height: 33px; }
     @media (max-width: 768px) {
       .plyr__control--overlaid, video__control--overlaid, iframe__control--overlaid {
         width: 80px !important;
@@ -3844,13 +3849,20 @@ svg {
         .plyr__control--overlaid svg, video__control--overlaid svg, iframe__control--overlaid svg {
           width: 20px;
           height: 20px; } }
+    @media (max-width: 420px) {
+      .plyr__control--overlaid, video__control--overlaid, iframe__control--overlaid {
+        width: 40px !important;
+        height: 40px; }
+        .plyr__control--overlaid svg, video__control--overlaid svg, iframe__control--overlaid svg {
+          width: 15px;
+          height: 15px; } }
     .plyr__control--overlaid:hover, video__control--overlaid:hover, iframe__control--overlaid:hover {
       background-color: #e30303 !important; }
-    .plyr__control--overlaid svg, video__control--overlaid svg, iframe__control--overlaid svg {
-      width: 33px;
-      height: 33px; }
+  .plyr .plyr__video-wrapper, video .plyr__video-wrapper, iframe .plyr__video-wrapper {
+    background-color: #fff !important; }
   .plyr video, video video, iframe video {
-    object-fit: cover; }
+    object-fit: contain !important;
+    background: #fff !important; }
 
 .thanks-body-wrapper {
   min-height: 100vh;
