@@ -10,17 +10,11 @@
     cursor: pointer;
     background-color: #fff;
     border-radius: 0.5em;
-    
-    &:first-child {
-        box-shadow: 0 64px 134px rgba(0, 0, 0, 0.1);
-        border-radius: 0;
-    }
 
     @media (max-width: 1200px) { margin: 0 auto }
     @media (max-width: 768px) { height: 350px; max-width: 600px; }
     @media (max-width: 576px) { height: 290px; max-width: 450px; }
     @media (max-width: 420px) { height: 200px }
-    
 
     &:hover {
         .plyr__controls {
