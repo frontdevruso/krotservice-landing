@@ -3850,7 +3850,9 @@ svg {
     .plyr__control--overlaid:hover {
       background-color: #e30303 !important; }
   @media (max-width: 400px) {
-    .plyr .plyr__control {
+    .plyr [data-plyr="pip"] {
+      display: none; }
+    .plyr .plyr__menu {
       display: none; } }
 
 .player__review {
