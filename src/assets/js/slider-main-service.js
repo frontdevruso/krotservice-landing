@@ -1,4 +1,4 @@
-import Swiper, { Pagination } from "swiper";
+import Swiper, { Pagination, Autoplay } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
     const mainServicesSlider = document.querySelector(".main-services-slider");
@@ -11,13 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const initializeSlider = () => {
             mySwiper = new Swiper(mainServicesSlider, {
                 slidesPerView: 1,
-                modules: [Pagination],
+                modules: [Pagination, Autoplay],
                 spaceBetween: 70,
                 breakpoints: {
                     769: {
                         slidesPerView: 2,
                         spaceBetween: 35,
                     }
+                },
+                autoplay: {
+                    delay: 1500,
+                    pauseOnMouseEnter: true,
                 },
                 pagination: {
                     el: ".main-services-slider__pagination",

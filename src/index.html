@@ -991,35 +991,35 @@ title: Крот сервис
             </button>
             <div class="swiper-wrapper works-slider__wrapper">
                 <div class="swiper-slide works__item">
-                    <a href="./assets/images/works-1@2x.jpg" class="work-item" data-fslightbox="works"><img width="380" height="390" src="./assets/images/works-1.jpg" data-src="./assets/images/works-1.jpg" srcset="./assets/images/works-1@2x.jpg 2x" alt="car"></a>
+                    <a href="./assets/images/works-1@2x.jpg" class="work-item" data-fslightbox="works" style="background-image: url('./assets/images/works-1.jpg');"></a>
                     <div class="works__item-text">
                         <data>11.06.2021</data>
                         <h2>Диагностика и устранение причины запаха в душевой в КП Никитские Поляны</h2>
                     </div>                    
                 </div>
                 <div class="swiper-slide works__item">
-                    <a href="./assets/images/works-2@2x.jpg" class="work-item" data-fslightbox="works"><img width="380" height="390" src="./assets/images/works-2.jpg" data-src="./assets/images/works-2.jpg" srcset="./assets/images/works-2@2x.jpg 2x" alt="car"></a>
+                    <a href="./assets/images/works-2@2x.jpg" class="work-item" data-fslightbox="works" style="background-image: url('./assets/images/works-2.jpg');"></a>
                     <div class="works__item-text">
                         <data>30.03.2021</data>
                         <h2>Очистка ливневой системы федеральной трассы «Северный обход Одинцова»</h2>
                     </div>                    
                 </div>
                 <div class="swiper-slide works__item">
-                    <a href="./assets/images/works-3@2x.jpg" class="work-item" data-fslightbox="works"><img width="380" height="390" src="./assets/images/works-3.jpg" data-src="./assets/images/works-3.jpg" srcset="./assets/images/works-3@2x.jpg 2x" alt="car"></a>
+                    <a href="./assets/images/works-3@2x.jpg" class="work-item" data-fslightbox="works" style="background-image: url('./assets/images/works-3.jpg');"></a>
                     <div class="works__item-text">
                         <data>20.05.2021</data>
                         <h2>Аварийное устранение засора канализационного выпуска многоквартирного дома</h2>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="swiper-slide works__item">
-                    <a href="./assets/images/works-4@2x.jpg" class="work-item" data-fslightbox="works"><img width="380" height="390" src="./assets/images/works-4.jpg" data-src="./assets/images/works-4.jpg" srcset="./assets/images/works-4@2x.jpg 2x" alt="car"></a>
+                    <a href="./assets/images/works-4@2x.jpg" class="work-item" data-fslightbox="works" style="background-image: url('./assets/images/works-4.jpg');"></a>
                     <div class="works__item-text">
                         <data>11.06.2021</data>
                         <h2>Диагностика и устранение причины запаха в душевой в КП Никитские Поляны</h2>
                     </div>                    
                 </div>
                 <div class="swiper-slide works__item">
-                    <a href="./assets/images/works-5@2x.jpg" class="work-item" data-fslightbox="works"><img width="380" height="390" src="./assets/images/works-5.jpg" data-src="./assets/images/works-5.jpg" srcset="./assets/images/works-5@2x.jpg 2x" alt="car"></a>
+                    <a href="./assets/images/works-5@2x.jpg" class="work-item" data-fslightbox="works" style="background-image: url('./assets/images/works-5.jpg');"></a>
                     <div class="works__item-text">
                         <data>11.06.2021</data>
                         <h2>Откачка котлована на стройплощадке ЖК «Сердце Столицы»</h2>
@@ -1148,9 +1148,11 @@ title: Крот сервис
                             <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
                             <span class="name">Сергей Петров</span>
                         </div>
-                        <video class="player__review player__init" playsinline controls>
-                            <source src="./assets/images/about-video-2.mp4" type="video/mp4" />
-                        </video>
+                        <div class="player__review">
+                            <video class="player__init" playsinline controls>
+                                <source src="./assets/images/about-video-2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
                     <div class="swiper-slide reviews-slider__item">
                         <div class="reviews-slider__item-info">
@@ -1159,7 +1161,27 @@ title: Крот сервис
                             <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
                             <span class="name">Сергей Петров</span>
                         </div>
-                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/-ytsfeWQfq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="player__review">
+                            <video class="player__init" playsinline controls>
+                                <source src="./assets/images/about-video-2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews-slider__item">
+                        <div class="reviews-slider__item-info">
+                            <data>22.11.2021</data>
+                            <h3 class="title">Засор в ванной комнате</h3>
+                            <p class="desc">Нет, согласно стандартам нашей компании, наши мастера работают в бахилах и перчатках, а так же в случае необходимости, убирают всю возможную грязь после работы.</p>
+                            <span class="name">Сергей Петров</span>
+                        </div>
+                        <div class="player__review">
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/-ytsfeWQfq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="player__review">
+                            <video class="player__init" playsinline controls>
+                                <source src="./assets/images/about-video-2.mp4" type="video/mp4" />
+                            </video>
+                        </div> -->
                     </div>
                 </div>
             </div>

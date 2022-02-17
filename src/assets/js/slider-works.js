@@ -17,8 +17,6 @@ new Swiper(".works-slider", {
 
     breakpoints: {
         500: {
-            loop: true,
-            centeredSlides: true,
             slidesPerView: "auto",
             spaceBetween: 30,
             slidesPerGroup: 1,

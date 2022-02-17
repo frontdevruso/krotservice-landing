@@ -73,10 +73,16 @@
         box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1);
         border-radius: 0.5em;
 
-        img {
-            border-radius: 10px 10px 0 0;
+        a {
+            height: 100%;
+            max-height: 390px;
+            min-height: 280px;
 
+            background: 50% / cover no-repeat;
+            border-radius: 0.5em 0.5em 0 0;
         }
+
+        img { border-radius: 10px 10px 0 0 }
 
         &-text {
             margin-top: auto;
